@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CheckIn.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomAction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheckIn.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomAction.h" />
   </ItemGroup>
