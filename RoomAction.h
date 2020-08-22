@@ -21,6 +21,7 @@ public:
 	string GetCustomerSurname() const;
 	int GetDaysOfStay() const;
 
+	virtual void RoomActionDisplay();
 
 };
 
