@@ -21,6 +21,11 @@ public:
 	string GetCustomerSurname() const;
 	int GetDaysOfStay() const;
 
+	void SetId(int);
+	void SetCustomerName(string );
+	void SetCustomerSurnmame(string);
+	void SetDaysOfStay(int);
+
 	virtual void RoomActionDisplay();
 
 };
