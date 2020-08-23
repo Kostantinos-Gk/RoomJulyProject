@@ -26,14 +26,8 @@ void Room::RoomDisplay(ostream& left){
 			"Floor: " << GetFloorNumber() << endl <<
 			"Description: " << GetDescription() << endl <<
 			"Amenities :" << GetAmenities() << endl <<
-			"Capacity : " << GetCapacity() << endl;
-
-	if (GetSmoking()) {
-		left << "Smoking : YES " << endl;
-	}
-	else {
-		left << "Smoking : NO " << endl;
-	}
+			"Capacity : " << GetCapacity() << endl <<
+			((GetSmoking()== true) ? "Smoking : YES" : "Smoking : NO") << endl;
 }
 
 int Room::GetRoomNumber() const{

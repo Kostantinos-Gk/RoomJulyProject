@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="CheckIn.cpp" />
     <ClCompile Include="CheckOut.cpp" />
+    <ClCompile Include="FIFOQueue.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomAction.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="CheckIn.h" />
     <ClInclude Include="CheckOut.h" />
+    <ClInclude Include="FIFOQueue.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomAction.h" />
     <ClInclude Include="Transfer.h" />
