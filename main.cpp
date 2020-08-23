@@ -1,13 +1,27 @@
 #include <iostream>
 #include "Room.h"
+#include "CheckIn.h"
+#include "CheckOut.h"
+#include "Transfer.h"
+
 using namespace std;
 
 int main() {
-	cout << "RoomProject" << endl;
+
 	
-	Room r1;
+	
+	Room r1(100,1,"Luxury Room","All-include, Sea-view, Mini bar",3,false);
+	Room r2(101, 1, "Luxury Room", "All-include, Mini Bar", 3, false);
+	Room r3(102, 1, "Basic Room", "Sea-view, Mini Bar", 3, false);
+	Room r4(103, 1, "Basic Room", "Mini Bar, Jacuzi", 3, false);
+	Room r5(104, 1, "Suite", "All-include, Sea-view, Mini bar , Private Security", 3, false);
+	Room r6(105, 1, "Suite", "All-include, Sea-view, Mini bar , Private Security", 3, false);
+
+	CheckIn chkin1(1000, "Nikos", "Spirou", 14, r1, "Bed and Breakfast");
+	Transfer trns1(1001, "Hara", "Verra", 14, r1,r4, "Air condition is out of order");
 
 	cout << r1;
-
+	cout << chkin1 ;
+	cout << trns1;
 	return 0;
 }

@@ -22,7 +22,7 @@ Room::~Room(){
 }
 
 void Room::RoomDisplay(ostream& left){
-	left << "Room :" << GetRoomNumber() << endl << "---------------" << endl <<
+	left << "Room :" << GetRoomNumber()  << endl <<
 			"Floor: " << GetFloorNumber() << endl <<
 			"Description: " << GetDescription() << endl <<
 			"Amenities :" << GetAmenities() << endl <<

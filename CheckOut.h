@@ -2,26 +2,25 @@
 #include "RoomAction.h"
 #include "Room.h"
 
-class CheckIn :  public RoomAction{
+class CheckOut : public RoomAction {
 private:
 	Room room;
 	string description;
 public:
-	CheckIn();
-	CheckIn(int, string, string, int, Room, string);
-	~CheckIn();
+	CheckOut();
+	CheckOut(int, string, string, int, Room, string);
+	~CheckOut();
 
-	friend ostream& operator<<(ostream&, CheckIn& );
+	friend ostream& operator<<(ostream&, CheckOut &);
 	void RoomActionDisplay(ostream& left);
-	
+
 
 	Room GetRoom() const;
 	string GetDescription() const;
 
-	void SetRoom(Room );
+	void SetRoom(Room);
 	void SetRoom(string);
 
 
 
 };
-
