@@ -26,7 +26,7 @@ public:
 	void SetCustomerSurnmame(string);
 	void SetDaysOfStay(int);
 
-	//virtual void RoomActionDisplay(ostream &);
+	virtual void RoomActionDisplay(ostream &)=0;
 
 };
 

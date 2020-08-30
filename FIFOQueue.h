@@ -7,12 +7,12 @@ private:
 	list <RoomAction *> roomactions;
 public:
 	FIFOQueue();
-	//~FIFOQueue();
+	~FIFOQueue();
 	
 	void insertA(RoomAction *);
 	void executeB();
 
-	//void FIFOQueueDisplay();
+	void FIFOQueueDisplay();
 	
 };
 
