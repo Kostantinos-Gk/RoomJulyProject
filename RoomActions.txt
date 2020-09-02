@@ -1,3 +1,8 @@
+CheckIn - RoomAction
+------------------------------------------------------------------------------
+[ Id: 1000, Customer Name: Nikos, Customer Surname: Spirou, Days of Stay: 14, Description: Bed and Breakfast ]
+---Room Details----
+[ Room :100, Floor: 1, Description: Luxury Room, Amenities : All-include, Sea-view, Mini bar, Capacity : 3, Smoking : NO ]
 Transfer - RoomAction
 ------------------------------------------------------------------------------
  [ Id: 1001, Customer Name: Hara, Customer Surname: Verra, Days of Stay: 14, Explanation: Air condition is out of order ]

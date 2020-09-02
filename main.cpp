@@ -4,11 +4,14 @@
 #include "CheckOut.h"
 #include "Transfer.h"
 #include "FIFOQueue.h"
+#include <fstream>
 
 using namespace std;
 
 int main() {
 	FIFOQueue f;
+	ofstream myfile;
+	myfile.open("RoomActions.txt");
 
 	Room r1(100,1,"Luxury Room","All-include, Sea-view, Mini bar",3,false);
 	Room r2(101, 1, "Luxury Room", "All-include, Mini Bar", 3, false);
@@ -19,9 +22,9 @@ int main() {
 
 	f.insertA(new CheckIn(1000, "Nikos", "Spirou", 14, r1, "Bed and Breakfast"));
 	f.insertA(new Transfer(1001, "Hara", "Verra", 14, r1, r4, "Air condition is out of order"));
-	f.FIFOQueueDisplay();
+	f.FIFOQueueDisplay(myfile);
 	
 	//TODO the display of a list and write in text file
-
+	myfile.close();
 	return 0;
 }

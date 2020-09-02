@@ -1,7 +1,7 @@
 #include "FIFOQueue.h"
 
 FIFOQueue::FIFOQueue(){
-
+	
 }
 
 FIFOQueue::~FIFOQueue(){
@@ -10,6 +10,7 @@ FIFOQueue::~FIFOQueue(){
 		delete* it;
 	}
 	roomactions.clear();
+	
 }
 
 void FIFOQueue::insertA(RoomAction *room){
@@ -21,12 +22,12 @@ void FIFOQueue::executeB(){
 	roomactions.pop_front();
 }
 
-void FIFOQueue::FIFOQueueDisplay(){
+void FIFOQueue::FIFOQueueDisplay(ofstream &myfile){
 	list <RoomAction*>::iterator it;
 	it = roomactions.begin();
 	while (it != roomactions.end()) {
 		printOut(*it);
-		printFile(*it);
+		printFile(*it,myfile);
 		it++;
 	}
 }
@@ -35,10 +36,8 @@ void FIFOQueue::printOut(RoomAction *ra){
 	ra->RoomActionDisplay(cout);
 }
 
-void FIFOQueue::printFile(RoomAction *ra){
-	ofstream myfile;
-	myfile.open("RoomActions.txt");
+void FIFOQueue::printFile(RoomAction *ra, ofstream &myfile){
+	
 	ra->RoomActionDisplay(myfile);
-	myfile.close();
-
+	
 }

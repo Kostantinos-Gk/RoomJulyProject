@@ -3,6 +3,8 @@
 #include <fstream>
 #include <list>
 
+using namespace std;
+
 class FIFOQueue {
 private:
 	list <RoomAction *> roomactions;
@@ -13,9 +15,9 @@ public:
 	void insertA(RoomAction *);
 	void executeB();
 
-	void FIFOQueueDisplay();
+	void FIFOQueueDisplay(ofstream &);
 	
 	void printOut(RoomAction *);
-	void printFile(RoomAction *);
+	void printFile(RoomAction *,ofstream &);
 };
 
