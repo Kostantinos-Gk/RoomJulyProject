@@ -1,0 +1,8 @@
+Transfer - RoomAction
+------------------------------------------------------------------------------
+ [ Id: 1001, Customer Name: Hara, Customer Surname: Verra, Days of Stay: 14, Explanation: Air condition is out of order ]
+---Room Source Details----
+[ Room :100, Floor: 1, Description: Luxury Room, Amenities : All-include, Sea-view, Mini bar, Capacity : 3, Smoking : NO ]
+---Room Destination Details----
+[ Room :103, Floor: 1, Description: Basic Room, Amenities : Mini Bar, Jacuzi, Capacity : 3, Smoking : NO ]
+

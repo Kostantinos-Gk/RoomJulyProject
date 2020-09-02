@@ -43,14 +43,9 @@ void Transfer::SetExplanation(string explanation){
 }
 
 void Transfer::RoomActionDisplay(ostream& left){
-	left << "Transfer - RoomAction\n---------------" << endl <<
-		"Id \t\t: " << GetId() << endl <<
-		"Customer Name\t: " << GetCustomerName() << endl <<
-		"Customer Surname: " << GetCustomerSurname() << endl <<
-		"Days of Stay\t: " << GetDaysOfStay() << endl <<
-		"Explanation\t: " << GetExplanation() << endl <<
-		"---Room Source Details----\n" << roomSource << endl <<
-		"---Room Destination Details----\n" << roomDestination << endl;	
+	left << "Transfer - RoomAction\n------------------------------------------------------------------------------" << endl <<
+		" [ Id: " << GetId() << ", Customer Name: " << GetCustomerName() << ", Customer Surname: " << GetCustomerSurname() << ", Days of Stay: " << GetDaysOfStay() << 
+		", Explanation: " << GetExplanation() << " ]\n---Room Source Details----\n" << roomSource << "---Room Destination Details----\n" << roomDestination << endl;	
 }
 
 ostream& operator<<(ostream& left, Transfer& right) {

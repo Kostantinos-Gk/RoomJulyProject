@@ -32,12 +32,9 @@ void CheckIn::SetRoom(string description){
 }
 
 void CheckIn::RoomActionDisplay(ostream& left){
-	left << "CheckIn - RoomAction\n---------------" << endl <<
-		"Id \t\t: " << GetId() << endl <<
-		"Customer Name\t: " << GetCustomerName() << endl <<
-		"Customer Surname: " << GetCustomerSurname() << endl <<
-		"Days of Stay\t: " << GetDaysOfStay() << endl <<
-		"Description\t: " << GetDescription() << endl << "---Room Details----\n" << room;
+	left << "CheckIn - RoomAction\n------------------------------------------------------------------------------" << endl <<
+		"[ Id: " << GetId() << ", Customer Name: " << GetCustomerName() << ", Customer Surname: " << GetCustomerSurname() << ", Days of Stay: " << GetDaysOfStay() <<
+		", Description: " << GetDescription() << " ]\n---Room Details----\n" << room;
 }
 
 ostream& operator<<(ostream& left, CheckIn& right){

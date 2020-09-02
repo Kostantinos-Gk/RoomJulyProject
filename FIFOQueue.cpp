@@ -13,6 +13,7 @@ FIFOQueue::~FIFOQueue(){
 }
 
 void FIFOQueue::insertA(RoomAction *room){
+
 	roomactions.push_back(room);
 }
 
@@ -21,11 +22,23 @@ void FIFOQueue::executeB(){
 }
 
 void FIFOQueue::FIFOQueueDisplay(){
-
 	list <RoomAction*>::iterator it;
 	it = roomactions.begin();
 	while (it != roomactions.end()) {
-		(*it)->RoomActionDisplay(cout);
+		printOut(*it);
+		printFile(*it);
 		it++;
 	}
+}
+
+void FIFOQueue::printOut(RoomAction *ra){
+	ra->RoomActionDisplay(cout);
+}
+
+void FIFOQueue::printFile(RoomAction *ra){
+	ofstream myfile;
+	myfile.open("RoomActions.txt");
+	ra->RoomActionDisplay(myfile);
+	myfile.close();
+
 }

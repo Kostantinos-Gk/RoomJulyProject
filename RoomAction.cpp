@@ -1,4 +1,5 @@
 #include "RoomAction.h"
+#include  "Room.h"
 
 RoomAction::RoomAction() {
 	id = 0;

@@ -22,12 +22,8 @@ Room::~Room(){
 }
 
 void Room::RoomDisplay(ostream& left){
-	left << "Room :" << GetRoomNumber()  << endl <<
-			"Floor: " << GetFloorNumber() << endl <<
-			"Description: " << GetDescription() << endl <<
-			"Amenities :" << GetAmenities() << endl <<
-			"Capacity : " << GetCapacity() << endl <<
-			((GetSmoking()== true) ? "Smoking : YES" : "Smoking : NO") << endl;
+	left << "[ Room :" << GetRoomNumber() <<", Floor: " << GetFloorNumber() <<", Description: " << GetDescription() <<
+			", Amenities : " << GetAmenities() << ", Capacity : " << GetCapacity() <<((GetSmoking()== true) ? ", Smoking : YES ]" : ", Smoking : NO ]") << endl;
 }
 
 int Room::GetRoomNumber() const{
