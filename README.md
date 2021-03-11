@@ -1,5 +1,5 @@
 # RoomJulyProject
-C++_Exercise for UNIVERSITY EXAMS
+<b>C++_Exercise for UNIVERSITY EXAMS</b>
 
 
 FIFO (First In First Out) Implementation of room management of a hotel. The implementation has been done using lists.
@@ -9,11 +9,11 @@ FIFO (First In First Out) Implementation of room management of a hotel. The impl
 Room [number, floor, description, amenities, capacity, smoking(Y/N)]
 
 We have actions as "RoomAction" which support the app, 
-
-1)CheckIN [id, customerName, customerSurName,daysOfStay, Room, description] <br>
-2)CheckOUT [id, customerName, customerSurName,daysOfStay, Room, description] <br>
-3)Tranfer [id, customerName, customerSurName,daysOfStay, RoomSource, RoomDestination,explanation]<br>
-
+<ol>
+  <li>CheckIN [id, customerName, customerSurName,daysOfStay, Room, description] </li>
+  <li>CheckOUT [id, customerName, customerSurName,daysOfStay, Room, description] </li>
+  <li>Tranfer [id, customerName, customerSurName,daysOfStay, RoomSource, RoomDestination,explanation]</li>
+</ol>
 The app :
 <ul>
   <li> Implementation, classes Room, RoomAction, CheckIN, CheckOUT, Transfer</li>
