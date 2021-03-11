@@ -10,9 +10,9 @@ Room [number, floor, description, amenities, capacity, smoking(Y/N)]
 
 We have actions as "RoomAction" which support the app, 
 <ol>
-  <li>CheckIN [id, customerName, customerSurName,daysOfStay, Room, description] </li>
-  <li>CheckOUT [id, customerName, customerSurName,daysOfStay, Room, description] </li>
-  <li>Tranfer [id, customerName, customerSurName,daysOfStay, RoomSource, RoomDestination,explanation]</li>
+  <li><b>CheckIN</b> [id, customerName, customerSurName,daysOfStay, Room, description] </li>
+  <li><b>CheckOUT</b> [id, customerName, customerSurName,daysOfStay, Room, description] </li>
+  <li><b>Tranfer</b> [id, customerName, customerSurName,daysOfStay, RoomSource, RoomDestination,explanation]</li>
 </ol>
 The app :
 <ul>
