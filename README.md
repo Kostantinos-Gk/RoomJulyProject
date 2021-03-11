@@ -18,9 +18,13 @@ The app :
 <ul>
   <li> Implementation, classes Room, RoomAction, CheckIN, CheckOUT, Transfer.</li>
   <li> Implementation, class FIFOQueue which models the list of actions(RoomActions) in the rooms.</li>
-  <li> Class FIFOQueue has two methods, insertA and excecuteA. With insert method add a new action in the list, with<br>
-  executeA delete an action from the list.</li>
-  <li> Class FIFOQueue, also has two  </li>
+  <li> FIFOQueue methods:
+    <ul>
+      <li>insertA</li>
+      <li>executeA</li> 
+      <li>printOut</li>
+      <li>printFile</li>
+    </ul>
   <li> In every action</li>
 </ul>
 
