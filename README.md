@@ -20,13 +20,12 @@ The app :
   <li> Implementation, class FIFOQueue which models the list of actions(RoomActions) in the rooms.</li>
   <li> FIFOQueue methods:
     <ul>
-      <li>insertA</li>
-      <li>executeA</li> 
-      <li>printOut</li>
-      <li>printFile</li>
+      <li>insertA  : add an action in the list</li>
+      <li>executeA : delete an action from the list</li> 
+      <li>printOut : print an action on screen(console)</li>
+      <li>printFile: print an action on file</li>
     </ul>
-  <li> In every action</li>
+  <li>In every room action, print the action, on screen and write on file RoomActions.txt </li>
 </ul>
 
-In main there is a case 
 
