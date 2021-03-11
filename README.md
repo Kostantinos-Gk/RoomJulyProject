@@ -6,7 +6,7 @@ FIFO (First In First Out) Implementation of room management of a hotel. The impl
 
 <b>Room Attributes:</b>
 
-</b>Room</b> [number, floor, description, amenities, capacity, smoking(Y/N)]
+<b>Room</b> [number, floor, description, amenities, capacity, smoking(Y/N)]
 
 We have actions as "RoomAction" which support the app, 
 <ol>
